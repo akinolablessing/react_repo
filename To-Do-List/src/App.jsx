@@ -9,6 +9,7 @@ const [isCompletedScreen,setIsCompletedScreen] = useState(false);
 const [allTodos,setTodos] = useState([]);
 const [newTitle,setNewTitle] = useState("");
 const [newDescription,setNewDescription] = useState("");
+const [completedTodos,setCompletedTodos] = useState([]);
 const handleAddTodo =()=>{
 let newTodoItem ={
     title:newTitle,
@@ -19,7 +20,32 @@ let updatedTodoArr= [...allTodos];
     setTodos(updatedTodoArr);
     localStorage.setItem("todolist",JSON.stringify(updatedTodoArr))
 };
+const handleDeleteTodo =(index)=> {
+    let reducedTodo = [...allTodos];
+    reducedTodo.splice(index);
 
+    localStorage.setItem("todolist", JSON.stringify(reducedTodo));
+    setTodos(reducedTodo)
+}
+const handleComplete =(index)=>{
+    let now = new Date();
+    let dd = now.getDate()
+    let mm = now.getMonth() +1;
+    let yyyy = now.getFullYear();
+    let h = now.getHours();
+    let m = now.getMinutes();
+    let s = now.getSeconds();
+    let completedOn = dd + '_' +mm+ '_' + yyyy + 'at' +h+ ':' +m+ ':' +s;
+
+    let filterItem = {
+        ...allTodos[index],
+        completedOn:completedOn
+    }
+    let updatedCompletedArr =[...completedTodos];
+    updatedCompletedArr.push(filterItem);
+    setCompletedTodos(updatedCompletedArr);
+
+}
     useEffect(() => {
         let savedTodo =JSON.parse(localStorage.getItem("todolist"));
         if(savedTodo){
@@ -53,7 +79,7 @@ let updatedTodoArr= [...allTodos];
               </div>
 
               <div className="todo-list">
-                  {allTodos.map((item,index)=>{
+                  {isCompletedScreen === false && allTodos.map((item,index)=>{
                       return(
                           <div className="todo-list-item" key={index}>
                               <div>
@@ -61,8 +87,9 @@ let updatedTodoArr= [...allTodos];
                                   <p>{item.description}</p>
                               </div>
                               <div>
-                                  <MdDelete className="icon"/>
-                                  <BsCheckLg className="check-icon"/>
+                                  <MdDelete className="icon" onClick={()=>handleDeleteTodo(index)}
+                                  title="Delete?"/>
+                                  <BsCheckLg className="check-icon" onClick={()=>handleComplete(index)} title="Completed?"/>
 
                               </div>
                           </div>
