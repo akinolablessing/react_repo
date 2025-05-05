@@ -95,7 +95,23 @@ const handleComplete =(index)=>{
                           </div>
                       )
                   })}
+                  {isCompletedScreen === true && completedTodos.map((item,index)=>{
+                      return(
+                          <div className="todo-list-item" key={index}>
+                              <div>
+                                  <h3>{item.title}</h3>
+                                  <p>{item.description}</p>
+                                  <p><small>Completed on: {item.completedOn}</small></p>
+                              </div>
+                              <div>
+                                  <MdDelete className="icon" onClick={()=>handleDeleteTodo(index)}
+                                            title="Delete?"/>
+                                  {/*<BsCheckLg className="check-icon" onClick={()=>handleComplete(index)} title="Completed?"/>*/}
 
+                              </div>
+                          </div>
+                      )
+                  })}
 
 
               </div>
