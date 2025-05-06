@@ -44,18 +44,35 @@ const handleComplete =(index)=>{
     let updatedCompletedArr =[...completedTodos];
     updatedCompletedArr.push(filterItem);
     setCompletedTodos(updatedCompletedArr);
+    handleDeleteTodo(index)
+    localStorage.setItem(
+        'completedTodos',
+        JSON.stringify(updatedCompletedArr)
+    );
+};
+const handleDeleteCompletedTodo = (index) => {
+    let reducedTodo = [...completedTodos];
+    reducedTodo.splice(index);
 
+    localStorage.setItem("completedTodos", JSON.stringify(reducedTodo));
+    setCompletedTodos(reducedTodo)
 }
+
     useEffect(() => {
         let savedTodo =JSON.parse(localStorage.getItem("todolist"));
+        let savedCompletedTodo =JSON.parse(localStorage.getItem("completedTodos"));
+
         if(savedTodo){
             setTodos(savedTodo);
+        }
+        if(savedCompletedTodo){
+            setCompletedTodos(savedCompletedTodo)
         }
     }, []);
   return (
     <>
       <div className="App">
-          <h1>My Todos</h1>
+          <h1>My Todo's</h1>
 
           <div className="todo-wrapper">
             <div className="todo-input">
@@ -104,7 +121,7 @@ const handleComplete =(index)=>{
                                   <p><small>Completed on: {item.completedOn}</small></p>
                               </div>
                               <div>
-                                  <MdDelete className="icon" onClick={()=>handleDeleteTodo(index)}
+                                  <MdDelete className="icon" onClick={()=>handleDeleteCompletedTodo(index)}
                                             title="Delete?"/>
                                   {/*<BsCheckLg className="check-icon" onClick={()=>handleComplete(index)} title="Completed?"/>*/}
 
