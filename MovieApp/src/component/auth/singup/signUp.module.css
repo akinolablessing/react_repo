@@ -1,0 +1,39 @@
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #61aadb;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 160px;
+
+}
+
+.formStyle p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formStyle label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.signUpButton{
+    background-color: blue;
+}

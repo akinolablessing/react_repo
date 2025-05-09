@@ -1,7 +1,7 @@
-import { useState } from 'react'
 
-import './App.css'
+
 import SignUp from "./component/auth/singup/SignUp.jsx";
+import Login from "./component/auth/login/Login.jsx";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <SignUp/>
+      <Login/>
   </>
   )
 }
