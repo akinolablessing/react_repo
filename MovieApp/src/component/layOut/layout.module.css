@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.layoutMainWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+.sideBarOutlet{
+    display: flex;
+}

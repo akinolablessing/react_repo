@@ -1,15 +1,16 @@
 
 
-import SignUp from "./component/auth/singup/SignUp.jsx";
-import Login from "./component/auth/login/Login.jsx";
+
+import router from "./router/routes.jsx";
+import {RouterProvider} from "react-router"
 
 function App() {
 
-
   return (
     <>
-      <SignUp/>
-      <Login/>
+        <RouterProvider router={router}></RouterProvider>
+      {/*<SignUp/>*/}
+      {/*<Login/>*/}
   </>
   )
 }
