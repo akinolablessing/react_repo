@@ -6,10 +6,12 @@ import {movieApi} from "../services/movieApi.jsx";
 
 export const store = configureStore({
     reducer:{
-        [userAuthApiSlice.reducerPath]: userAuthApiSlice.reducer
+        [userAuthApiSlice.reducerPath]: userAuthApiSlice.reducer,
+        [movieApi.reducerPath]: movieApi.reducer
     },
     middleware:(getDefaultMiddleware)=>(
-        getDefaultMiddleware().concat(userAuthApiSlice.middleware)
+        getDefaultMiddleware().concat(userAuthApiSlice.middleware,
+            movieApi.middleware)
     )
 })
 setupListeners(store.dispatch)

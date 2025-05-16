@@ -1,8 +1,9 @@
 import React from "react";
-import {useGetNowPlaingMovies} from "../../services/movieApi.jsx";
+import {useGetNowPlayingMoviesQuery} from "../../services/movieApi.jsx";
 import MovieCard from "../../reuseable/MovieCard.jsx"
 const NowPlaying = () =>{
-    const data = useGetNowPlaingMovies()
+    const data = useGetNowPlayingMoviesQuery()
+    console.log(data)
 
     return(
         <div>
