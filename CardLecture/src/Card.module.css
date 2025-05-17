@@ -49,4 +49,9 @@ width: 120px;
 }
 .card .bigButton:hover{
     background-color: #babad5;
+    transform: translateY(-5px);
+}
+.card .bigButton:active{
+    background-color: #004085;
+    transform: translateY(0);
 }

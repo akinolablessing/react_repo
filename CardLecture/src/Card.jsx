@@ -1,6 +1,7 @@
 import profilePic from "./assets/download.jpeg"
 import profilePicTwo from "./assets/download (2).jpeg"
 import profilePicThree from "./assets/download (4).jpeg"
+import {Link} from "react-router-dom";
 
 import style from "./Card.module.css"
 
@@ -15,7 +16,9 @@ function Card(){
             <img className={style.cardImage} src={profilePic} alt="profile picture"></img>
             <h1 className={style.cardTitle}>Big size</h1>
             <p>This is a Big Size pizza that can serve 24 people!</p>
+            <Link to="/Bigsize">
             <button className={style.bigButton}>Order Now</button>
+            </Link>
         </div>
     <div className={style.card}>
         <img className={style.cardImage} src={profilePicTwo} alt="profile picture"></img>

@@ -1,10 +1,11 @@
-import Card from "./Card.jsx";
+
+import router from "./Router/router.jsx";
+import {RouterProvider} from "react-router";
 
 function App() {
   return(
       <>
-          <Card/>
-
+          <RouterProvider router={router}></RouterProvider>
       </>
   );
 
