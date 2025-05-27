@@ -1,0 +1,169 @@
+body{
+    /*background: radial-gradient(circle at center, black, #a173a1);*/
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background: radial-gradient(circle at top left, black, purple);
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 40px;
+}
+.textColor{
+    color: ghostwhite;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 100px;
+}
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 20px 40px;*/
+
+}
+
+.cvButton {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pages{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+.semiImage{
+    max-width: 200%;
+    height:590px;
+    /*width: 400px;*/
+    /*border-radius: 30px;*/
+    /*margin-bottom: 10px;*/
+    margin-left: 120px;
+    margin-top: -20px;
+}
+.nameAndPicture{
+    display: flex;
+    justify-content: space-between;
+}
+.akinyemi{
+
+    font-size: 80px;
+    color: ghostwhite;
+    text-shadow: 3px 3px purple;
+
+}
+.akinyemiDiv{
+    font-weight: initial;
+    margin-left: 170px;
+}
+.passionateEngineer{
+    color: ghostwhite;
+    text-shadow: 3px 3px purple;
+    font-size: 18px;
+}
+.line{
+    border: none;
+    border-top: 2px solid purple;
+    margin: 20px 0;
+    width: 100%;
+}
+.aboutMe{
+    text-align: center;
+    color: ghostwhite;
+    font-size: 25px;
+    text-shadow:4px 4px #2c2c2c;
+}
+.software{
+    color: ghostwhite;
+    text-shadow:4px 4px purple;
+    font-size: 38px;
+}
+.aboutMeText{
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.8;
+    color: ghostwhite;
+    max-width: 600px;
+    text-shadow:3px 3px purple ;
+
+}
+.aboutContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+.imageGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    margin-top: 30px;
+
+}
+.semiima{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.javaImage{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(219, 117, 235);
+
+}
+span{
+    font-size: 26px;
+}
+.technology{
+    color: ghostwhite;
+    text-shadow:4px 4px #2c2c2c;
+    font-size: 35px;
+
+}
+.technologyContainer{
+    text-align: center;
+}
+.logoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+    /*background-color: #c850e9;*/
+    border-radius: 16px;
+}
+
+.javalogo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgb(219, 117, 235);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.javalogo:hover {
+    transform: scale(2.2);
+    box-shadow: 0 4px 10px rgb(219, 117, 235);
+}
+
+.javalogo img {
+    width: 50px;
+    height: auto;
+}
+.javaImage:hover{
+    transform: scale(1.5);
+    box-shadow: 0 4px 10px rgb(219, 117, 235);
+}
+.semiima{
+    transform: scale(1.0);
+    box-shadow: 0 4px 10px rgb(219, 117, 235);
+}
+

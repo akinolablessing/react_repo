@@ -9,13 +9,16 @@ const storeCard=(props)=>{
     const [selectedProduct] = useState(null);
     if(isLoading){
     return(
-        <div>Loading...</div>
+        <div >Loading...</div>
     )
     }
 
     return (
 <div>
-    <h1>Dummy Products</h1>
+    <div className={style.dummyProduct}>
+    <h1 className={style.dummyText}>~.~.~.~Dummy Products~.~.~.~</h1>
+        <hr></hr>
+    </div>
     <ul>
     {
         data?.products.map((result)=>(
@@ -38,6 +41,20 @@ const storeCard=(props)=>{
         </div>
     )}
     </ul>
+    <div className={style.aboutUs}>
+        <div >
+            <h1 className={style.aboutUsText}>About Us</h1>
+            <div>
+                <p className={style.textDiv}>Welcome to Dummy Product — your one-stop shop for a seamless and enjoyable shopping experience!
+
+                    Our store was built as a demo project with a simple goal: to showcase the power of modern web development
+                    in creating user-friendly, responsive, and dynamic online shopping experiences. While this is a dummy store,
+                    it’s designed to reflect the features of a real e-commerce platform — from browsing products and viewing details
+                    to managing user accounts and handling secure transactions.</p>
+            </div>
+            <p className={style.date}>&copy;{new Date().getFullYear()}Dummy Product</p>
+        </div>
+    </div>
 </div>
 
     )
