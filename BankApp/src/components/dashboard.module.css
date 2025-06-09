@@ -168,6 +168,134 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 60px;
+    padding: 40px 20px;
+    border-radius: 16px;
+}
+
+.featuresContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 280px;
+}
+
+.featureItem h2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #4a148c;
+    margin-bottom: 8px;
+}
+
+.featureItem p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.investImage {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/*.ladyImageWrapper {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    !*justify-content: center;*!*/
+/*    !*align-items: center;*!*/
+/*    margin-left: 150px;*/
+/*    margin-top: -400px;*/
+/*    min-width: 400px;*/
+
+/*}*/
+
+.ladyImageWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    /* Default safe mobile positioning */
+    margin: 2rem auto;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* For desktop or larger screens, preserve the original offset positioning */
+@media (min-width: 992px) {
+    .ladyImageWrapper {
+        margin-left: 150px;
+        margin-top: -400px;
+    }
+}
+
+/* Optional: control image inside wrapper */
+.ladyImageWrapper img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+.ladyImage {
+    width: 200%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 768px) {
+    .featuresContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featuresContent {
+        align-items: center;
+    }
+
+    .featureItem h2 {
+        font-size: 20px;
+    }
+
+    .featureItem p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .ladyImage {
+        max-width: 90%;
+    }
+}
+.whatCanWeHelpYouWithDiv{
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    box-shadow: 7px 7px rgba(36, 33, 33, 0.2);
+    margin: 40px auto;
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.whatCanWeHelpYouWithDiv:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.featuresContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 40px;
     padding: 40px 20px;
     border-radius: 16px;
@@ -240,9 +368,58 @@ body {
         max-width: 90%;
     }
 }
-.whatCanWeHelpYouWithDiv{
-    text-align: center;
+
+.featuresContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
 }
 
+.featureCard {
 
+}
+
+.featureCard:hover {
+}
+
+.featureCard img {
+    width: 200px;
+    height: 250px;
+
+}
+.featureImg img{
+    width: 270px;
+    height: 270px;
+}
+
+.feature-text {
+    flex: 1;
+    min-width: 200px;
+}
+
+.feature-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.feature-text p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+    .featuresContainer {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+.date{
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+}
 
