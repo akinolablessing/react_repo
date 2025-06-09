@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5dc63e8e-9679-4a54-bcb0-b956f3b71d50" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BigPizza.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bigsize.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router/router.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Black and Red Dark Photo Food YouTube Thumbnail (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Black and Red Dark Photo Food YouTube Thumbnail(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/attachment-papa-murphys-pizza-featured.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/bbqPizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/download (2).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/download (4).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/download.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/hawa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/hawalia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/pepperonic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/sugarCheese.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/vegatarianPizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Store/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Store/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Store/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Store/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Store/src/test/storeCard.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Store/src/test/storeCard.test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../E-Store/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../E-Store/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Portfolio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Portfolio/src/components/portFolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio/src/components/portFolio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Portfolio/src/components/portFolio.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Portfolio/src/components/portFolio.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../To-Do-List/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../To-Do-List/src/App.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xD8ktjhPCjZHgV9bLRDkk5BlLe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DELL/Desktop/react/CardLecture&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.5\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5dc63e8e-9679-4a54-bcb0-b956f3b71d50" name="Changes" comment="" />
+      <created>1747461429852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747461429852</updated>
+      <workItem from="1747461431965" duration="25077000" />
+      <workItem from="1747641625265" duration="4464000" />
+      <workItem from="1747977799800" duration="2350000" />
+      <workItem from="1749489366802" duration="95000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
