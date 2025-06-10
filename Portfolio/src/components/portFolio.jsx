@@ -20,9 +20,37 @@ import flask from "../assets/download (2).png"
 import mySql from "../assets/download (3).png"
 import mongoDb from "../assets/download (4).png"
 import move from "../assets/images.jpeg"
+import { useState } from "react";
+import emailjs from "emailjs-com";
+
 // import {Link} from "react-router-dom";
 
 function PortFolio() {
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [status, setStatus] = useState("");
+
+    const handleChange = (e) =>
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+
+        emailjs
+            .send(
+                "service_l4ekz9s",
+                "template_fereqlj",
+                formData,
+                "qL7qgDSGED9jsLuwb"
+            )
+            .then(() => {
+                setStatus("Message sent successfully!");
+                setFormData({ name: "", email: "", message: "" });
+            })
+            .catch(() => {
+                setStatus("Failed to send message. Try again later.");
+            });
+    };
     return (
         <>
             <motion.div
@@ -36,7 +64,7 @@ function PortFolio() {
                 <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target={"_blank"} rel={"noopener"}>CV</a>
                 <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target={"_blank"} rel={"noopener"}>Linkdin</a>
                 <a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>WhatsApp</a>
-                <a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>GitHub</a>
+                <a className={style.cvButton} href="https://github.com/akinolablessing" target={"_blank"} rel={"noopener"}>GitHub</a>
                     </div>
                 </div>
                 {/*<hr></hr>*/}
@@ -248,7 +276,7 @@ function PortFolio() {
                     <h4 className={style.projectSubtitle}>Key Technologies:</h4>
                     <p className={style.techStack}>   React.js, JavaScript, CSS (optional: React Router, useState/useContext, or localStorage)</p>
                     <a
-                        href="https://github.com/akinolablessing/store"
+                        href="https://github.com/akinolablessing/react_repo/tree/main/PizzaJoint"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={style.auctionStyle}
@@ -257,7 +285,47 @@ function PortFolio() {
                     </a>
                 </div>
                 </div>
-
+            <section className={style.contactContainer}>
+                <h2 className="contact-title">Contact Me</h2>
+                <form onSubmit={handleSubmit} className={style.contactForm}>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                        className={style.formInput}
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        className={style.formInput}
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        rows="5"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                        className={style.formTextarea}
+                    />
+                    <button type="submit" className={style.submitButton}>
+                        Send Message
+                    </button>
+                </form>
+                {status && <p className={style.formStatus}>{status}</p>}
+            </section>
+            <hr className={style.line}></hr>
+            <motion.p className={style.date}
+                      whileHover={{ scale: 1.05, color: "#a0bcd0" }}
+                      transition={{ type: "spring", stiffness: 300 }}
+            >&copy;{new Date().getFullYear()}-Akinyemi Ayomide </motion.p>
         </>
     );
 }
