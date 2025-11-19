@@ -63,11 +63,17 @@ function PortFolio() {
                     <div className={style.pages}>
                 <a className={style.cvButton} href="/Akinyemi-Ayomide-Resume.pdf" target={"_blank"} rel={"noopener"}>CV</a>
                 <a className={style.cvButton} href="https://www.linkedin.com/in/akinola-blessing-b26a29351/" target={"_blank"} rel={"noopener"}>Linkdin</a>
-                <a className={style.cvButton} href="" target={"_blank"} rel={"noopener"}>WhatsApp</a>
+                        <a
+                            className={style.cvButton}
+                            href="https://wa.me/2349155300427"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            WhatsApp
+                        </a>
                 <a className={style.cvButton} href="https://github.com/akinolablessing" target={"_blank"} rel={"noopener"}>GitHub</a>
                     </div>
                 </div>
-                {/*<hr></hr>*/}
                 <div>
                 </div>
             </motion.div>
